@@ -1,0 +1,322 @@
+{
+ "meta": {
+  "name": "prod-inventory-opt / 6 族 × 12 月 生产-库存联合优化实例",
+  "seed": 20260415,
+  "periods": 12,
+  "n_products": 6,
+  "time_unit": "月",
+  "currency": "元",
+  "generator": "data/make_instance.py",
+  "note": "全部数据为合成场景，非真实工厂数据"
+ },
+ "season": [
+  0.85,
+  0.9,
+  1.0,
+  1.0,
+  0.95,
+  1.0,
+  1.05,
+  1.0,
+  1.05,
+  1.15,
+  1.3,
+  1.2
+ ],
+ "products": [
+  {
+   "id": "P1",
+   "name": "液压阀体",
+   "hours": 0.9,
+   "material_cost": 38.0,
+   "holding_cost": 1.14,
+   "setup_cost": 420.0,
+   "shortage_penalty": 95.0,
+   "base_demand": 320,
+   "demand_cv": 0.12,
+   "safety_stock": 112,
+   "initial_inventory": 67
+  },
+  {
+   "id": "P2",
+   "name": "精密齿轮组",
+   "hours": 1.2,
+   "material_cost": 45.0,
+   "holding_cost": 1.35,
+   "setup_cost": 520.0,
+   "shortage_penalty": 110.0,
+   "base_demand": 260,
+   "demand_cv": 0.1,
+   "safety_stock": 91,
+   "initial_inventory": 55
+  },
+  {
+   "id": "P3",
+   "name": "伺服支架",
+   "hours": 1.6,
+   "material_cost": 30.0,
+   "holding_cost": 0.9,
+   "setup_cost": 380.0,
+   "shortage_penalty": 78.0,
+   "base_demand": 180,
+   "demand_cv": 0.14,
+   "safety_stock": 63,
+   "initial_inventory": 38
+  },
+  {
+   "id": "P4",
+   "name": "主轴套筒",
+   "hours": 2.0,
+   "material_cost": 55.0,
+   "holding_cost": 1.65,
+   "setup_cost": 640.0,
+   "shortage_penalty": 140.0,
+   "base_demand": 140,
+   "demand_cv": 0.11,
+   "safety_stock": 49,
+   "initial_inventory": 29
+  },
+  {
+   "id": "P5",
+   "name": "密封组件",
+   "hours": 0.8,
+   "material_cost": 42.0,
+   "holding_cost": 1.26,
+   "setup_cost": 460.0,
+   "shortage_penalty": 100.0,
+   "base_demand": 220,
+   "demand_cv": 0.13,
+   "safety_stock": 77,
+   "initial_inventory": 46
+  },
+  {
+   "id": "P6",
+   "name": "连杆毛坯",
+   "hours": 1.4,
+   "material_cost": 26.0,
+   "holding_cost": 0.78,
+   "setup_cost": 300.0,
+   "shortage_penalty": 68.0,
+   "base_demand": 160,
+   "demand_cv": 0.1,
+   "safety_stock": 56,
+   "initial_inventory": 34
+  }
+ ],
+ "demand": [
+  [
+   283,
+   208,
+   157,
+   112,
+   186,
+   120
+  ],
+  [
+   284,
+   237,
+   146,
+   132,
+   207,
+   138
+  ],
+  [
+   342,
+   266,
+   174,
+   144,
+   210,
+   162
+  ],
+  [
+   316,
+   258,
+   180,
+   130,
+   207,
+   169
+  ],
+  [
+   290,
+   254,
+   174,
+   122,
+   213,
+   148
+  ],
+  [
+   322,
+   270,
+   190,
+   135,
+   211,
+   163
+  ],
+  [
+   338,
+   281,
+   183,
+   152,
+   240,
+   155
+  ],
+  [
+   337,
+   307,
+   181,
+   139,
+   246,
+   157
+  ],
+  [
+   360,
+   293,
+   197,
+   154,
+   246,
+   164
+  ],
+  [
+   344,
+   302,
+   209,
+   156,
+   268,
+   174
+  ],
+  [
+   432,
+   347,
+   271,
+   178,
+   274,
+   210
+  ],
+  [
+   375,
+   311,
+   213,
+   171,
+   286,
+   176
+  ]
+ ],
+ "demand_std": [
+  [
+   32.64,
+   22.1,
+   21.42,
+   13.09,
+   24.31,
+   13.6
+  ],
+  [
+   34.56,
+   23.4,
+   22.68,
+   13.86,
+   25.74,
+   14.4
+  ],
+  [
+   38.4,
+   26.0,
+   25.2,
+   15.4,
+   28.6,
+   16.0
+  ],
+  [
+   38.4,
+   26.0,
+   25.2,
+   15.4,
+   28.6,
+   16.0
+  ],
+  [
+   36.48,
+   24.7,
+   23.94,
+   14.63,
+   27.17,
+   15.2
+  ],
+  [
+   38.4,
+   26.0,
+   25.2,
+   15.4,
+   28.6,
+   16.0
+  ],
+  [
+   40.32,
+   27.3,
+   26.46,
+   16.17,
+   30.03,
+   16.8
+  ],
+  [
+   38.4,
+   26.0,
+   25.2,
+   15.4,
+   28.6,
+   16.0
+  ],
+  [
+   40.32,
+   27.3,
+   26.46,
+   16.17,
+   30.03,
+   16.8
+  ],
+  [
+   44.16,
+   29.9,
+   28.98,
+   17.71,
+   32.89,
+   18.4
+  ],
+  [
+   49.92,
+   33.8,
+   32.76,
+   20.02,
+   37.18,
+   20.8
+  ],
+  [
+   46.08,
+   31.2,
+   30.24,
+   18.48,
+   34.32,
+   19.2
+  ]
+ ],
+ "capacity": [
+  1841,
+  1841,
+  1841,
+  1841,
+  1841,
+  1841,
+  1841,
+  1841,
+  1841,
+  1841,
+  1841,
+  1841
+ ],
+ "config": {
+  "production_integer": false,
+  "inventory_cap_factor": 2.0,
+  "enforce_safety_stock": false,
+  "mip_time_limit": 60.0
+ }
+}
